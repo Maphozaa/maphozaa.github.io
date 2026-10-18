@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="googlea0d60caa401bbaec" />
-<meta name="description" content="KLB Technologies makes mobile games for Android: Rap City Rap Career Simulator and Warona: Marine World.">
-<title>KLB Technologies | Android games</title>
+<meta name="description" content="KLB Technologies makes Android apps and games: Rap City Rap Career Simulator, Warona: Marine World and Audio Notes Maker.">
+<title>KLB Technologies | Android apps and games</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
@@ -14,29 +14,31 @@
   --deep:#0B1F2A; --text:#E9F1F3; --muted:#9DB4BC;
   --rap-bg:#1B1428; --gold:#F2B632;
   --sea-bg:#0E5F6E; --coral:#FF7A66;
+  --paper:#F1E7D0; --ink:#1B2A33;
 }
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
 body{background:var(--deep);color:var(--text);font-family:Figtree,system-ui,sans-serif;line-height:1.6;font-size:1.05rem}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
 header{padding:4rem 0 3rem}
 .brand{font:800 clamp(2.6rem,9vw,5.5rem)/1 "Bricolage Grotesque",Figtree,sans-serif;letter-spacing:-.03em}
 .tag{margin-top:1.25rem;max-width:34rem;color:var(--muted);font-size:1.2rem}
-.games{display:grid;gap:1.25rem;grid-template-columns:1fr}
-@media(min-width:760px){.games{grid-template-columns:1fr 1fr}}
-.game{border-radius:22px;padding:2rem;min-height:300px;display:flex;flex-direction:column;justify-content:space-between}
-.game h2{font:800 clamp(1.8rem,5vw,2.4rem)/1.1 "Bricolage Grotesque",Figtree,sans-serif;letter-spacing:-.02em}
+.games{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.game{border-radius:22px;padding:2rem;min-height:320px;display:flex;flex-direction:column;justify-content:space-between}
+.game h2{font:800 clamp(1.7rem,4.5vw,2.1rem)/1.1 "Bricolage Grotesque",Figtree,sans-serif;letter-spacing:-.02em}
 .game p{margin-top:.9rem;max-width:26rem}
 .rap{background:var(--rap-bg);border:2px solid var(--gold)}
 .rap h2{color:var(--gold)}
 .sea{background:var(--sea-bg);border:2px solid var(--coral)}
 .sea h2{color:#FFD9D2}
+.note{background:var(--paper);border:2px solid var(--paper);color:var(--ink)}
 .btn{display:inline-block;margin-top:1.75rem;padding:.8rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;align-self:flex-start}
 .rap .btn{background:var(--gold);color:#1B1428}
 .sea .btn{background:var(--coral);color:#0B1F2A}
-.btn:hover{filter:brightness(1.08)}
+.note .btn{background:var(--ink);color:var(--paper)}
+.btn:hover{filter:brightness(1.1)}
 section.about{padding:4rem 0 2rem;max-width:36rem}
 section.about h2,section.contact h2{font:800 1.6rem/1.2 "Bricolage Grotesque",Figtree,sans-serif;margin-bottom:.75rem}
 section.about p{color:var(--muted)}
@@ -49,7 +51,7 @@ footer{border-top:1px solid #1E3846;padding:1.5rem 0 2.5rem;color:var(--muted);f
 <div class="wrap">
   <header>
     <h1 class="brand">KLB Technologies</h1>
-    <p class="tag">Independent studio making mobile games for Android.</p>
+    <p class="tag">Independent studio making apps and games for Android.</p>
   </header>
 
   <main>
@@ -69,16 +71,24 @@ footer{border-top:1px solid #1E3846;padding:1.5rem 0 2.5rem;color:var(--muted);f
         </div>
         <a class="btn" href="https://play.google.com/store/search?q=Warona%20Marine%20World&amp;c=apps">Get it on Google Play</a>
       </article>
+
+      <article class="game note">
+        <div>
+          <h2>Audio Notes Maker</h2>
+          <p>A study helper for students: record yourself reading your notes and listen anywhere, draft notes in a notepad, and find useful student websites.</p>
+        </div>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.AudioNoteMaker">Get it on Google Play</a>
+      </article>
     </div>
 
     <section class="about">
       <h2>About us</h2>
-      <p>KLB Technologies is a small game studio from South Africa. We design, build and publish our own Android games.</p>
+      <p>KLB Technologies is a small studio from South Africa. We design, build and publish our own Android apps and games.</p>
     </section>
 
     <section class="contact" id="contact">
       <h2>Contact</h2>
-      <p>Questions or feedback about our games: <a href="mailto:klbtechologies@gmail.com">klbtechologies@gmail.com</a></p>
+      <p>Questions or feedback: <a href="mailto:klbtechologies@gmail.com">klbtechologies@gmail.com</a></p>
     </section>
   </main>
 
